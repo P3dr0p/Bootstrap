@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <title>Desafio Bootstrap</title>
+</head>
+<body>
+    <!--CABEÇALHO E BARRA DE NAVEGAÇÃO-->
+    <header>
+        <!--NAVEGAÇÃO-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container d-flex">
+                <!--LOGO NAVEGAÇÃO-->
+                <a href="#" class="nav-brand">
+                    <img src="./img/logo.svg" alt="logo do senai">
+                </a>
+                <!--BOTÃO RESPONSIVO - SÓ APLICADO QUANDO A TELA MUDA DE PROPORÇÃO-->
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav-principal">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--LINK BARRA DE NAVEGAÇÃO-->
+                <div class="collapse navbar-collapse" id="nav-principal">
+                    <ul class="navbar-nav ms-auto d-flex aling-items-center text-uppercase">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Senai Alagoas</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Para você</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Para Empresas</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contatos</a>
+                        </li>
+
+                        <li class="nav-link">
+                            <a href="#" class="btn btn-outline-light ml-4">Entrar</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--CAIXA PRINCIPAL - HERO IMAGEM PRINCIPAL-->
+    <section id="hero">
+        <div class="container">
+            <section class="row">
+                <article class="col-md-10 col-lg-6 d-lg-flex text-white">
+                    <div class="align-self-center">
+                        <h2>O SENAI, classifica <br> você para o mercado!</h2>
+                        <form>
+                            <div class="input-group input-group-lg mb-3">
+                                <!--INPUT - CAIXA CADASTRE-SE-->
+                                <input type="text" class="form-control" placeholder="Cadastre-se" aria-label="Cadastre-se" aria-describedby="button-addon2">
+                                <button class="btn btn-danger px-4" type="button" id="button-addon2">Button</button>
+                                <!--BOTÃO - CAIXA CADASTRE-SE-->
+                            </div>
+                        </form>
+                        <p class="mt-2"> Disponível para
+                        <!--SVG 1-->
+                            <a href="#" class="btn btn-outline-light">
+                                <img src="./img/Android.svg" alt="">
+                            </a>
+                        <!--SVG 2-->
+                            <a href="#" class="btn btn-outline-light">
+                                <img src="./img/Apple.svg" alt="">
+                            </a>
+                        </p>
+                    </div>
+                </article>
+                <div class="col-lg-6 d-nome d-lg-block">
+                    <img src="./img/Capa Pessoas.png" alt="Imagem Mãe e filho">
+                </div>
+            </section>
+        </div>
+    </section>
+            <!--MENU - CAIXA PRINCIPAL-->
+            <main>
+                <article class="pesquisa border-top border-danger border-4 text-white">
+                    <div class="containter">
+                        <section class="row">
+                            <article class="col-sm-6 azul-claro">
+                                <div class="my-4">
+                                    <p class="h2">Para você</p>
+                                    <form>
+                                        <!--PARA VOCÊ-->
+                                        <section class="form-row d-flex flex-wrap gap-2">
+                                            <article class="col">
+                                                <div class="form-group">
+                                                    <select class="form-control form-control-lg border-none">
+                                                        <option>Área de atuação</option>
+                                                        <option>Alimentos</option>
+                                                        <option>Informática</option>
+                                                        <option>Gestão</option>
+                                                        <option>Edificações</option>
+                                                    </select>
+                                                </div>
+                                            </article>
+                                            <!--UNIDADES SENAI-->
+                                            <article class="col">
+                                                <div class="form-group">
+                                                    <select class="form-control form-control-lg border-none">
+                                                        <option>Local do Curso</option>
+                                                        <option>Benedito Bentes</option>
+                                                        <option>Gustavo Paiva</option>
+                                                        <option>Polo Industrial</option>
+                                                        <option>Arapiraca</option>
+                                                    </select>
+                                                </div>
+                                            </article>
+                                        </section>
+                                        <button class="btn btn-danger mt-2 w-25">Buscar</button>
+                                    </form>
+                                </div>
+                            </article>
+                            <!--PARA EMPRESAS-->
+                            <article class="col-ms-6">
+                                <div class="my-4">
+                                    <P class="h2">Para Empresas</P>
+                                    <form>
+                                        <section class="form-row d-flex flex-wrap gap-2">
+                                            <!--ÁREA DE ATUAÇÃO-->
+                                            <article class="col">
+                                                <div class="form-group">
+                                                    <select class="form-control form-control-lg border-none">
+                                                        <option>Área de atuação</option>
+                                                        <option>Alimentos</option>
+                                                        <option>Informática</option>
+                                                        <option>Gestão</option>
+                                                        <option>Edificações</option>
+                                                    </select>
+                                                </div>
+                                            </article>
+                                            <!--SERVIÇOS-->
+                                            <article class="col">
+                                                <div class="form-group">
+                                                    <select class="form-control form-control-lg border-none">
+                                                        <option>Categorias</option>
+                                                        <option>Educação Profissional</option>
+                                                        <option>Consultorias</option>
+                                                    </select>
+                                                </div>
+                                            </article>
+                                        </section>
+                                        <button class="btn btn-danger mt-2 w-25">Buscar</button>
+                                    </form>
+                                </div>
+                            </article>
+                        </section>
+                    </div>
+                    </article>
+                        <div class="container">
+                            <!--SEÇÃO DE INFORMATICA E ADMISTRAÇÃO-->
+                            <section class="row mt-3 border-bottom">
+                                <!--INFORMÁTICA-->
+                                <article class="col-md-6">
+                                    <article class="mb-3">
+                                        <div class="d-flex gap-3 aling-items-center">   
+                                            <img src="./img/informatica.png" width="100" alt="" class="aling-self-center mr-4">
+                                        </div> 
+                                            <h4><a href="#" class="text-decoration-none text-blank">Informática</a></h4>
+                                            <p><strong>Técnico de Informática para internet</strong><br>Período: 21/11/2022 a 21/12/23 <br> Carga horária: 3h | Turno: Verspertino <br> Local: Benedito Bentes</p>
+                                    </article>
+                            </article>
+                            
+                            <article class="col-md-6">
+                                <!--ADMINISTRAÇÃO-->
+                                <article class="mb-3">
+                                    <div class="d-flex gap-3 aling-items-center">   
+                                        <img src="./img/Gestão.png" width="100" alt="" class="aling-self-center mr-4">
+                                    </div> 
+                                        <h4><a href="#" class="text-decoration-none text-blank">Informática</a></h4>
+                                        <p><strong>Técnico em Administração</strong><br>Período: 21/11/2022 a 21/12/2022 <br> Carga horária: 3h | Turno: Verspertino <br> Local: Benedito Bentes</p>
+                                    </div>
+                                </div> 
+                            </article>
+                        </article>
+                    </section>
+                    
+                    <div class="container">
+                        <section class="row mt-3 border-bottom">
+                        <!--MODA-->
+                            <article class="col-md-6">
+                                <article class="mb-3">
+                                <div class="d-flex gap-3 aling-items-center">   
+                                    <img src="./img/Costura.png" width="100" alt="" class="aling-self-center mr-4">
+                                </div> 
+                                    <h4><a href="#" class="text-decoration-none text-blank">Informática</a></h4>
+                                    <p><strong>Corte e Costura</strong><br>Período: 21/11/2022 a 21/12/2022 <br> Carga horária: 3h | Turno: Verspertino <br> Local: Benedito Bentes</p> 
+                                </article>
+                            </article>
+
+                            <article class="col-md-6">
+                                <!--EDIFICAÇÕES-->
+                                <article class="mb-3">
+                                    <div class="d-flex gap-3 aling-items-center">   
+                                        <img src="./img/Edifições.png" width="100" alt="" class="aling-self-center mr-4">
+                                    </div> 
+                                        <h4><a href="#" class="text-decoration-none text-blank">Informática</a></h4>
+                                        <p><strong>Técnico de Edificações</strong><br>Período: 21/11/2022 a 21/12/2022 <br> Carga horária: 3h | Turno: Verspertino <br> Local: Benedito Bentes</p>
+                                    </article>
+                                </article>
+                            </section>
+                        </div>
+                    </main>
+                <footer class="navbar navbar-expand-lg navbar-dark bg-primary d-flex justify-content-center">
+                    <div class="d-flex gap-3 text-white" >© Todos os Direitos Reservados</div>
+                </footer>
+</body>
+</html>
